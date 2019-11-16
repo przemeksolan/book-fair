@@ -345,7 +345,7 @@
                 <header class="ma-t_l ma-b_s">
                     <div id="exhibitors" class="flex wrap-no ma-b_s">
                         <h2 id="invalid-input">
-                            Participates
+                            Participatesus
                         </h2>
                     </div>
                     <div class="text_l read_l">

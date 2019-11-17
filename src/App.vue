@@ -3,12 +3,12 @@
         <main class="pa-h_l ma-b_l">
 
             <header class="flex wrap-no gap_xs ma-t_m">
-                <div class="span-auto">
+                <div class="span-auto logo">
                     <a href="/" class="pa_s pa-l_l block bo-t_px bo-r_px bo-b_px text-bold docs-teutonic-link">
                         <div class="muted">Organized by the</div> Enterprise Ireland <div class="muted">&</div> Higher Education Ireland
                     </a>
                 </div>
-                <div class="span-auto hide-p">
+                <div class="span-auto hide-p search">
                     <div class="search-box docs-search" id="app">
                         <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
                             <input tabindex="1" v-model="search" type="search" class="clicker input algoliaSearch ds-input" placeholder="Search by title, genre or author" size="30" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="search input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
@@ -25,10 +25,9 @@
                         </span>
                     </div>
                 </div>
-                <div class="span-auto ma-l-auto ma-t_s">
+                <div class="span-auto ma-l-auto ma-t_s menu">
                     <a href="#visitors" class="ma-r_l">Visitors</a>
                     <a href="#exhibitors" class="ma-r_l">Exhibitors</a>
-                    <a href="#about" class="ma-r_l ">About</a>
                     <a href="#subscribe">Get Updates</a>
                 </div>
 
@@ -333,19 +332,11 @@
                 </div>
             </div>
 
-
-
-
-<!--            &lt;!&ndash; Tickets Section &ndash;&gt;-->
-<!--            <h1 id="exhibitors" class="ma-t_l ma-b_m text-hero_m">Register</h1>-->
-<!--            <p class="text_l ma-b_m">Register your details below to be involved</p>-->
-<!--        §x§    <Tickets />-->
-
             <article>
                 <header class="ma-t_l ma-b_s">
                     <div id="exhibitors" class="flex wrap-no ma-b_s">
                         <h2 id="invalid-input">
-                            Participatesus
+                            Participate
                         </h2>
                     </div>
                     <div class="text_l read_l">
@@ -802,5 +793,28 @@
         left: 0;
         z-index: 10;
         border-top: calc(var(--space-px) * 2) dashed var(--color-main-3);
+    }
+
+    @media only screen and (max-width: 1400px) {
+        header.flex.wrap-no.gap_xs.ma-t_m {
+            display: inline;
+        }
+
+        .logo {
+            /*background-color: green;*/
+            margin-bottom: 20px;
+        }
+        .span-auto.hide-p.search {
+            float: right;
+        }
+        .menu {
+            /*background-color: blue;*/
+        }
+    }
+    @media only screen and (max-width: 870px) {
+        .span-auto.hide-p.search {
+            float: none;
+            margin-bottom: 15px;
+        }
     }
 </style>
